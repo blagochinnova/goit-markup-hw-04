@@ -256,6 +256,7 @@ a{
 }
 .features-list{
     display: flex;
+    justify-content: space-between;
 }
 .features-list .item:not(:last-child){
     margin-right: 30px;
