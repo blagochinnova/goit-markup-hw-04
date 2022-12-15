@@ -28,6 +28,7 @@
     --button-active: #188CE8;
     --border-client:#AFB1B8;
     --client-color:#AFB1B8;
+    --footer-social-bg: rgba(255, 255, 255, 0.1);
 }
 /* ----------Body---------- */
 body {
@@ -37,11 +38,9 @@ font-family: 'Roboto', sans-serif;
 letter-spacing: 0.03em;
 font-size: 14px;
 line-height: 1.7;
-/* font-weight: 400px; */
 }
 
 .conteiner{
-    /* border: 1px solid tomato; */
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
@@ -162,6 +161,7 @@ a{
         margin-left: 50px;
       }
          .contacts-lists .link {
+            display: flex;
           color: var(--primary-text-color);
             font-weight: 500;
             font-size: 14px;
@@ -371,6 +371,7 @@ width: 270px;
     line-height: 1.17;
     text-align: center;
     color:var(--button-text);
+    text-transform: uppercase;
 }
 .client-svg{
     display: flex;
@@ -393,7 +394,11 @@ width: 270px;
     color: var(--client-color);
     
 }
-
+.client-box:focus,
+.client-box:hover{
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
 /* Footer */
 .logo-footer{
     display: inline-block;
@@ -570,5 +575,42 @@ margin-right: 10px;
     outline: none;
     border: none;
     color: var(--white-color);
+    background-color: var(--accent-color);
+}
+.footer-conteiner{
+    display: flex;
+    align-items: baseline;
+}
+.footer-soc-link{
+    margin-bottom: 0;
+    margin-right: 94px;
+}
+.footer-logo{
+    margin-bottom: 0px;
+    margin-right: 69px;
+}
+.join{
+    display: block;
+    margin-bottom: 20px;
+    font-family: "Roboto";
+    font-style: normal;
+    text-transform: uppercase;
+    line-height: 1.14;
+}
+.icon-team-footer{
+    flex-direction: row;
+    justify-content: content;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--white-color);
+    background-color: var(--footer-social-bg);
+}
+.icon-join{
+    fill: currentColor;
+}
+.icon-team-footer:focus,
+.icon-team-footer:hover{
     background-color: var(--accent-color);
 }
