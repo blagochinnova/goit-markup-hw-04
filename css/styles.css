@@ -258,6 +258,9 @@ a{
     display: flex;
     justify-content: space-between;
 }
+.features-list .item{
+    width: 270px;
+}
 .features-list .item:not(:last-child){
     margin-right: 30px;
 }
@@ -285,6 +288,8 @@ a{
     margin: 0;
     font-size: 36px;
     line-height: 1.17;
+    
+    justify-content: space-between;
 }
 
 .task-list .img:not(:last-child){
