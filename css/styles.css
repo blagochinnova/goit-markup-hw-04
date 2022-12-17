@@ -369,7 +369,6 @@ width: 270px;
     padding-bottom: 94px;
 }
 .client-tittle{
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     margin-bottom: 50px;
@@ -377,7 +376,6 @@ width: 270px;
     line-height: 1.17;
     text-align: center;
     color:var(--button-text);
-    text-transform: uppercase;
 }
 .client-svg{
     display: flex;
@@ -492,13 +490,13 @@ width: 270px;
     padding: 0;
 
 }
-.portfolio-list .link:hover,
+/* .portfolio-list .link:hover,
 .portfolio-list .link:focus,
 .portfolio-list .link:active {
     color:var(--button-text);
     background-color: var(--accent-col);
 
-}
+} */
 .portfolio-nav .button{
  padding: 6px 22px;
  min-width: 73px;
@@ -525,8 +523,11 @@ flex-basis: calc((100% - 3 * 30px) / 3);
 margin: 10px;
 background: var(--white-color);
 }
-.portfolio-list .card:hover,
-.portfolio-list .card:focus{
+.port-link{
+    display:block;
+}
+ .port-link:focus,
+ .port-link:hover{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -578,8 +579,6 @@ margin-right: 10px;
 }
 .icon-team:focus,
 .icon-team:hover{
-    outline: none;
-    border: none;
     color: var(--white-color);
     background-color: var(--accent-color);
 }
@@ -596,16 +595,13 @@ margin-right: 10px;
     margin-right: 69px;
 }
 .join{
-    display: block;
     margin-bottom: 20px;
-    font-family: "Roboto";
     font-style: normal;
     text-transform: uppercase;
     line-height: 1.14;
 }
 .icon-team-footer{
-    flex-direction: row;
-    justify-content: content;
+justify-content: center;
     align-items: center;
     width: 44px;
     height: 44px;
@@ -620,4 +616,3 @@ margin-right: 10px;
 .icon-team-footer:hover{
     background-color: var(--accent-color);
 }
-/*  */
